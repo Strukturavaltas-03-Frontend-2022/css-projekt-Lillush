@@ -1,0 +1,352 @@
+:root {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+}
+
+/* header elemek */
+
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236, 236, 236);
+    height: 100px;
+    width: 100%;
+    margin: 0;
+
+}
+
+.header__title {
+    display: inline;
+    font-size: 1.25rem;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    white-space: nowrap;
+
+}
+
+.hamburger__icon {
+    display: inline;
+    float: left;
+}
+
+
+.search__container {
+    display: inline;
+    float: right;
+}
+
+.search__input {
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    transition-property: border;
+    transition-duration: .15s;
+    margin-right: 0;
+    border-style: solid;
+    border: 1;
+}
+
+.search__input:focus {
+    outline: none;
+    border-color: rgb(128, 189, 255);
+}
+
+.search__btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    background-color: rgb(0, 123, 255);
+    color: rgb(236, 236, 236);
+    font-size: 1.2rem;
+    margin-left: -1;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+.flex-container {
+    display: flex;
+    height: 100px;
+}
+
+.flex-container>div {
+
+    margin: 10px;
+    align-self: center;
+
+}
+
+.title {
+    flex-grow: 1.8;
+
+}
+
+.menu__icon {
+    flex-grow: 6;
+
+}
+
+.search__container {
+
+    flex-grow: 3;
+}
+
+#search {
+    display: inline;
+    float: right;
+}
+
+.user__icon {
+    flex-grow: 0.3;
+}
+
+.arrow__icon {
+    flex-grow: 0.3;
+}
+
+#user {
+    display: inline;
+    float: right;
+}
+
+/* main elemek */
+
+.flex-container__main {
+    display: flex;
+    width: 100%;
+}
+
+.main__aside {
+    background-color: rgb(33, 37, 41);
+    height: 100%;
+    width: 100%;
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+.content {
+    flex-direction: column;
+    flex-grow: 8;
+    flex-basis: 0;
+    width: 100%;
+}
+
+
+.div1 {
+    flex-grow: 3.5;
+    max-width: 20%;
+    background-color: rgb(33, 37, 41);
+}
+
+.div2 {
+    flex-grow: 8;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+/* nav elemek */
+.main__nav {
+    color: rgb(192, 192, 192);
+}
+
+.nav__ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+li>a {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+}
+
+/* tartalom + kártyák */
+
+.flex__head {
+    font-size: 55px;
+}
+
+.main__breadcrumb {
+    background-color: rgb(233, 236, 239);
+    border-radius: .25rem;
+    padding: 1rem, 1.5rem;
+    width: 100%;
+    height: 60px;
+    color: rgb(131, 130, 130);
+}
+
+.breadcrumb {
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+.flex__cards {
+    display: flex;
+    padding: 8px;
+    flex: 25%
+}
+
+.main__card {
+    padding: 10px;
+    margin: 15px;
+    flex: 25%
+}
+
+.card__top {
+    display: block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.card__bottom {
+    display: block;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 3px 10px;
+    white-space: nowrap;
+}
+
+.main__card--blue .card__top {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--blue .card__top:hover {
+    background-color: rgb(0, 150, 255);
+}
+
+.main__card--yellow .card__top {
+    background-color: rgb(255, 193, 7);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--yellow .card__top:hover {
+    background-color: rgb(255, 210, 7);
+}
+
+.main__card--green .card__top {
+    background-color: rgb(40, 167, 69);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--green .card__top:hover {
+    background-color: rgb(40, 210, 69);
+}
+
+.main__card--red .card__top {
+    background-color: rgb(220, 53, 69);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--red .card__top:hover {
+    background-color: rgb(230, 53, 69);
+}
+
+.main__card--blue .card__bottom {
+    background-color: rgb(2, 117, 240);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--blue .card__bottom:hover {
+    background-color: rgb(2, 135, 240);
+}
+
+.main__card--yellow .card__bottom {
+    background-color: rgb(247, 187, 7);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--yellow .card__bottom:hover {
+    background-color: rgb(247, 200, 7);
+}
+
+.main__card--green .card__bottom {
+    background-color: rgb(36, 150, 63);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--green .card__bottom:hover {
+    background-color: rgb(36, 180, 63);
+}
+
+.main__card--red .card__bottom {
+    background-color: rgb(206, 50, 65);
+    color: white;
+    transition: background-color .3sec;
+}
+
+.main__card--red .card__bottom:hover {
+    background-color: rgb(236, 50, 65);
+}
+
+.card__top>h3 {
+    padding-left: 15px;
+}
+
+.card__bottom>h4 {
+    padding-left: 15px;
+}
+
+li>h3 {
+    font-size: 0.8rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+li>i,
+a {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#angle {
+    float: right;
+    white-space: nowrap;
+}
+
+
+/* reszponziv beállítások */
+
+@media (max-width: 700px) {
+    .flex__cards {
+        flex-direction: column;
+    }
+
+    li>h3 {
+        visibility: hidden;
+    }
+
+    li>a {
+        visibility: hidden;
+    }
+
+    li>#angle {
+        visibility: hidden;
+    }
+
+    #search {
+        visibility: hidden;
+    }
+}

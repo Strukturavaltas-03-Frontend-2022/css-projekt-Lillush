@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="header--dark">
+        <div class="flex-container">
+            <div class="title">
+                <h1 class="header__title">Admin Page</h1>
+            </div>
+            <div class="menu__icon">
+                <i class="fa fa-bars hamburger__icon"></i>
+            </div>
+            <div class="search__container">
+                <div id="search">
+                    <input class="search__input" type="text" placeholder="Search for...">
+                    <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="user__icon">
+                <i id="user" class="fa fa-user"></i>
+            </div>
+            <div class="arrow__icon">
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex-container__main">
+            <div class="div1">
+                <aside class="main__aside">
+                    <nav class="main__nav">
+                        <ul class="nav__ul">
+                            <li>
+                                <h3>CORE</h3>
+                            </li>
+                            <li><i class="fa fa-tachometer"></i> <a href="/dashboard">Dashboard</a></li>
+                            <li>
+                                <h3>INTERFACE</h3>
+                            </li>
+                            <li><i class="fa fa-film"></i> <a href="/layout">Layout</a><i id="angle" class="fa fa-angle-right"></i></li>
+                            <li><i class="fa fa-bookmark"></i> <a href="/page">Page</a><i id="angle" class="fa fa-angle-right"></i></li>
+                            <li>
+                                <h3>ADDONS</h3>
+                            </li>
+                            <li><i class="fa fa-area-chart"></i> <a href="/charts">Charts</a></li>
+                            <li><i class="fa fa-table"></i> <a href="/tables">Tables</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="div2">
+                <section class="content">
+                    <div><h1 class="flex__head">Dashboard</h1></div>
+                    <div class="main__breadcrumb">
+                        <ul class="breadcrumb">
+                            <li>Dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="flex__cards">
+                        <div class="main__card main__card--blue">
+                            <div class="card__top"><h3>Primary Card</h3></div>
+                            <div class="card__bottom"><h4>View Details <i id="angle" class="fa fa-angle-right"></i></h4></div>
+                        </div>
+                        <div class="main__card main__card--yellow">
+                            <div class="card__top"><h3>Warning Card</h3></div>
+                            <div class="card__bottom"><h4>View Details <i id="angle" class="fa fa-angle-right"></i></h4></div>
+                        </div>
+                        <div class="main__card main__card--green">
+                            <div class="card__top"><h3>Success Card</h3></div>
+                            <div class="card__bottom"><h4>View Details <i id="angle" class="fa fa-angle-right"></i></h4></div>
+                        </div>
+                        <div class="main__card main__card--red">
+                            <div class="card__top"><h3>Danger Card</h3></div>
+                            <div class="card__bottom"><h4>View Details <i id="angle" class="fa fa-angle-right"></i></h4></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
